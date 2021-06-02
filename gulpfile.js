@@ -164,8 +164,6 @@ exports.build = gulp.series(
   )
 );
 
-// exports.build = build;
-
 // Defaults
 
 exports.default = gulp.series(
