@@ -54,7 +54,6 @@ const scripts = () => {
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
-
 }
 
 exports.scripts = scripts;

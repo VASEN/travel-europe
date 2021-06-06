@@ -1,0 +1,49 @@
+.header-menu {
+  margin-right: 55px;
+
+  @include tablet {
+    display: none;
+
+    width: 100%;
+
+    margin: 0;
+  }
+}
+
+.header-menu__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @include tablet {
+    justify-content: start;
+  }
+}
+
+.header-menu__item {
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  @include tablet {
+  }
+}
+
+.header-menu__link {
+  @include font(14px, 17px, $font-weight-medium);
+
+  color: $color-black;
+
+  &:focus,
+  &:hover {
+    color: $color-bittersweet;
+  }
+
+  @include tablet {
+    display: flex;
+
+    background-color: $color-snow;
+  }
+}

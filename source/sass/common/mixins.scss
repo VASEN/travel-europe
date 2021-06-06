@@ -21,26 +21,26 @@
   list-style: none;
 }
 
-@mixin container ($mw: 320px, $px: 25px) {
-  min-width: $mw;
+@mixin container ($mw: 1920px, $px: 365px) {
+  max-width: $mw;
   padding-left: $px;
   padding-right: $px;
 }
 
 @mixin mobile {
-  @media (min-width: #{$width-mobile - 1px}) {
+  @media (max-width: $width-mobile-max) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$width-tablet - 1px}) {
+  @media (max-width: $width-tablet-max) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$width-desktop - 1px}) {
+  @media (max-width: #{$width-desktop-max}) {
     @content;
   }
 }

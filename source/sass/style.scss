@@ -1,4 +1,12 @@
-@import "mixins";
-@import "fonts";
-@import "variables";
-@import "global";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/variables";
+@import "common/global";
+@import "common/container";
+
+// Blocks
+@import "blocks/header-menu";
+@import "blocks/contacts";
+
+// Components
+@import "components/header";
