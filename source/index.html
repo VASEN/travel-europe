@@ -11,27 +11,33 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened header--nojs">
       <div class="container">
         <a class="header__logo-link">
           <picture class="header__logo-image">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/logo-tablet.webp">
-            <source type="image/webp" srcset="img/logo@2x.webp">
+            <source type="image/webp" srcset="img/logo.webp">
             <source media="(max-width: 1023px)" srcset="img/logo-tablet.png">
-            <img src="img/logo@2x.png" alt="Логотип туристического сервиса WAY">
+            <img src="img/logo.png" alt="Логотип туристического сервиса WAY">
           </picture>
         </a>
         <button class="header__button button" type="button" aria-label="Открыть меню"></button>
         <nav class="header__menu header-menu">
           <ul class="header-menu__list">
-            <li class="header-menu__item">О путешествии</li>
-            <li class="header-menu__item">Цены</li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#places">О путешествии</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#prices">Цены</a>
+            </li>
           </ul>
         </nav>
-        <div class="header__contacts contacts">
-          <span class="visually-hidden">Свяжитесь с нами</span>
-          <a class="contacts__phone" href="tel:849978468446" aria-label="Свяжитесь с нами!">+7 (499) -784-684-46</a>
-        </div>
+        <a class="header__contacts contacts" href="tel:849978468446" aria-label="Свяжитесь с нами">
+          <svg class="contacts__image" width="24" height="24" viewBox="0 0 17 24" fill="none">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span class="contacts__phone">+7 (499) -784-684-46</span>
+        </a>
       </div>
     </header>
     <main>
@@ -247,7 +253,7 @@
           </li>
         </ul>
       </section>
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="prices__wrapper">
           <h2 class="prices__title">Цены</h2>
           <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
@@ -334,6 +340,6 @@
         <p class="footer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
       </section>
     </footer>
-  <!--    <script src="js/header-open.min.js"></script>-->
+      <script src="js/header-open.min.js"></script>
   </body>
 </html>

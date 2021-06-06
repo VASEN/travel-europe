@@ -4,10 +4,10 @@
   "description": "Путешествие по Европе",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.0.2",
+    "autoprefixer": "^10.0.2",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
@@ -21,8 +21,9 @@
     "gulp-webp": "^4.0.1",
     "postcss": "^8.3.0",
     "postcss-csso": "^5.0.0",
-    "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint": "^13.7.2",
+    "stylelint-config-htmlacademy": "0.1.4",
+    "stylelint-config-standard": "^22.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -46,5 +47,9 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "plumber": "^0.4.8",
+    "uglify-js": "^3.13.9"
   }
 }

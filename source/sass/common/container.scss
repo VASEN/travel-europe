@@ -1,0 +1,14 @@
+.container {
+  @include container;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include tablet {
+    @include container($width-tablet-max, 80px);
+  }
+
+  @include mobile {
+    @include container($width-mobile-max, 16px);
+  }
+}
